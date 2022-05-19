@@ -1,7 +1,7 @@
-# Написать программу с пустым классом Country. Описать наследуемые классы стран.
-# Добавить каждому классу поле population
-# Описать метод setPopulation (задать объекту св-во population)
-# Описать метод getPopulation (получить из объекта св-во population)
+# 1. Написать программу с пустым классом Country. Описать наследуемые классы стран.
+# 2. Добавить каждому классу поле population
+# 3. Описать метод setPopulation (задать объекту св-во population)
+# 4. Описать метод getPopulation (получить из объекта св-во population)
 
 class Country:
     def __init__(self, population):
