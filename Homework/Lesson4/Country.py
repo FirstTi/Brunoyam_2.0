@@ -4,17 +4,25 @@
 # 4. Описать метод getPopulation (получить из объекта св-во population)
 
 class Country:
-    def __init__(self, population):
+    def __init__(self, population, name):
         self.population = population
-        #self.name = name ????
+        self.name = name
     
-    def getPopulation(self):
-        
-        #return self.name, self.population
+    def setPopulation(self, population, name):
+        self.population = population
+        self.name = name
         return self.population
+        return self.name
+
+    def getPopulation(self):
+        #return self.population
+        #return self.name
+        print(f"Население {self.name} составляет {self.population} миллионов")
+
 
 class Bulgaria(Country):
     population = 75
+    name = "Bulgaria"
     pass
 
 
@@ -23,10 +31,15 @@ class Canada(Country):
     #self.name = name????
     pass
 
+
 class Germany(Country):
     population = 120
     pass
 
-print(Canada.population)
-print(Germany.population)
 
+canada_country = Canada(population=100, name=Canada)
+
+# print(canada_country.setPopulation)
+print(canada_country.getPopulation)
+# print(Germany.getPopulation)
+print(Bulgaria.getPopulation)
